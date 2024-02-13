@@ -27,7 +27,10 @@ const Input = () => {
             price
         }
         setMedicineList((prevData) => [...prevData, newMedicine])
-        console.log(medicineList)
+      //  console.log(medicineList)
+      setMedicineName('')
+      setDescription('')
+      setPrice('')
     }
     
 
@@ -36,16 +39,16 @@ const Input = () => {
     <form className={classes.form}>
       <label className={classes.label} htmlFor="name">
         Medicine Name:
-      </label>
-      <input type="text" id="name" name="name" value={medicineName} onChange={NameChangeHandler} />
+      </label><br/>
+      <input className={classes.input} type="text" id="name" name="name" value={medicineName} onChange={NameChangeHandler} /><br/>
       <label className={classes.label} htmlFor="description">
         Description:
-      </label>
-      <input type="text" id="description" name="description" value={description} onChange={descriptionChangeHandler}/>
+      </label><br/>
+      <input className={classes.input} type="text" id="description" name="description" value={description} onChange={descriptionChangeHandler}/><br/>
       <label className={classes.label} htmlFor="price">
         Price:
-      </label>
-      <input type="text" id="price" name="price" value={price} onChange={priceChangeHandler}/>
+      </label><br/>
+      <input className={classes.input} type="text" id="price" name="price" value={price} onChange={priceChangeHandler}/><br/>
       <button onClick={submitHandler}>Add Item</button>
     </form>
     <MedicineList medicineList={medicineList}/>

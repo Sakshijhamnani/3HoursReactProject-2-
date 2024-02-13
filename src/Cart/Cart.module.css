@@ -1,0 +1,79 @@
+.p{
+    display: flex;
+    flex-direction: column;
+}
+.li{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin:5px
+
+}
+.price{
+    margin-top: 17px;
+    font-size: 20px;
+}
+.quantity{
+    margin-top: 17px;
+    font-size: 20px;
+  ;
+}
+.name{
+    font-size: 20px;
+}
+.description{
+    font-style: italic;
+}
+.button{
+    height: 30px;
+    width: 30px;
+    margin-top: 22px;
+    border: 1px solid black;
+    border-radius: 3px;
+   font-size: 20px;
+    color: black;
+    background-color: #e0825d;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:  #924323;
+    color: white;
+}
+.amount{
+    color: #924323;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+}
+.bill{
+    font: inherit;
+    cursor: pointer;
+    background-color: #8a2b06;
+    border: 1px solid #8a2b06;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 350px;
+
+}
+.bill:hover{
+    background-color: #722404;
+}
+.close{
+    font: inherit;
+    cursor: pointer;
+    background-color: #8a2b06;
+    border: 1px solid #8a2b06;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 6px;
+    text-align: right;
+    /* margin-left: 350px; */
+}
+.close:hover{
+    background-color: #722404;
+}
